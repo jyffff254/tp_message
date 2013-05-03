@@ -17,7 +17,7 @@ class IndexAction extends CommonAction {
 		$Page = new Page($count,$lim);// 实例化分页类 传入总记录数和每页显示的记录数
 		$Page->setConfig('header','条留言');
 		$show = $Page->show();// 返回分页信息
-		$arr = $message->relation('User')->limit($Page->firstRow.','.$Page->listRows)->select();
+		$arr = $message->relation('User')->order('id desc')->limit($Page->firstRow.','.$Page->listRows)->select();
 		//dump($arr);
 		$this->assign('list',$arr);
 		$this->assign('page',$show);// 赋值分页输出
