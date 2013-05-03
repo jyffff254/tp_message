@@ -1,0 +1,56 @@
+<taglib name='Message' />
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "
+http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html,charset=utf-8">
+	<title>注册</title>
+	<load href="__PUBLIC__/Css/BASIC.CSS"/>
+	<load href="__PUBLIC__/Css/Home/reg.CSS"/>
+	<load href="__PUBLIC__/Js/jquery.js" />
+	<script>
+		$(function(){
+			var error = new Array();
+			$('input[name="username"]').blur(function(){
+			var username = $(this).val();
+			//alert(username);
+				$.get('__URL__/checkname',{'username':username},function(data){
+					if(data=='有人'){
+						error['username'] = 1;
+						$('#umessage').remove();
+						$('input[name="username"]').after('<p id="umessage" style="color:green">用户名太热啦，换个名字试试？</p>');
+					}else{
+						error['username'] = 0;
+						$('#umessage').remove();
+					}
+				})
+			});
+			//提交表单
+			$('img.register').click(function(){
+				if(error['username']==1){
+					return false;
+				}else{
+					$('form[name="myForm"]').submit();
+				}
+			});
+			$('img[class="login"]').click(function(){
+				window.location='__APP__/Login/login';
+			});
+		});
+	</script>
+</head>
+<body>
+	<form action='__URL__/doReg' method='POST' name='myForm'>
+		用 户 名：<input type="text" name='username'/><br>
+		密　　码：<input type="password" name='password'/><br>
+		确认密码：<input type="password" name='repassword'/><br>
+		性　　别：<input type="radio" name='sex' value='1' class='radio'/>男
+				<input type="radio" name='sex' value='0' class='radio'/>女<br>
+		验 证 码：<input type='text' name='code'  />
+		<!-- alt只能在IE显示，要在其他浏览器显示需要同时加title ；onclick事件加random是为了解决IE浏览器使用缓存的问题-->
+		<Message:code width='30' height='20' /> <br/>
+		<img src='__PUBLIC__/Image/register.gif'  class="register"/>
+		<img src='__PUBLIC__/Image/login.gif' class="login" />
+	</form>
+</body>
+</html>

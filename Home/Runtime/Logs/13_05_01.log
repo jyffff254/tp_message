@@ -1,0 +1,84 @@
+[ 2013-05-01T11:57:53+08:00 ] 127.0.0.1 /think_message/index.php/Register/checkname?username=zzz
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000506s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000572s ]
+SQL: SHOW COLUMNS FROM `tp_user` [ RunTime:0.011669s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tp_user` WHERE ( `username` = 'zzz' ) LIMIT 1   [ RunTime:0.039361s ]
+
+[ 2013-05-01T12:25:19+08:00 ] 127.0.0.1 /think_message/index.php/Register/checkname?username=11
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000486s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000551s ]
+SQL: SHOW COLUMNS FROM `tp_user` [ RunTime:0.002823s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tp_user` WHERE ( `username` = '11' ) LIMIT 1   [ RunTime:0.000362s ]
+
+[ 2013-05-01T12:28:57+08:00 ] 127.0.0.1 /think_message/index.php/Register/checkname?username=
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000494s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000561s ]
+SQL: SHOW COLUMNS FROM `tp_user` [ RunTime:0.002061s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tp_user` WHERE ( `username` = '' ) LIMIT 1   [ RunTime:0.000478s ]
+
+[ 2013-05-01T12:29:18+08:00 ] 127.0.0.1 /think_message/index.php/Register/checkname?username=
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000587s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000659s ]
+SQL: SHOW COLUMNS FROM `tp_user` [ RunTime:0.001875s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tp_user` WHERE ( `username` = '' ) LIMIT 1   [ RunTime:0.000270s ]
+
+[ 2013-05-01T12:29:28+08:00 ] 127.0.0.1 /think_message/index.php/Register/checkname?username=11
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000630s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000714s ]
+SQL: SHOW COLUMNS FROM `tp_user` [ RunTime:0.001852s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tp_user` WHERE ( `username` = '11' ) LIMIT 1   [ RunTime:0.000279s ]
+
+[ 2013-05-01T12:29:51+08:00 ] 127.0.0.1 /think_message/index.php/Register/checkname?username=11l
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001058s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001174s ]
+SQL: SHOW COLUMNS FROM `tp_user` [ RunTime:0.001840s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tp_user` WHERE ( `username` = '11l' ) LIMIT 1   [ RunTime:0.000963s ]
+
+[ 2013-05-01T13:18:10+08:00 ] 127.0.0.1 /think_message/index.php/Register/checkname?username=uu
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000526s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000650s ]
+SQL: SHOW COLUMNS FROM `tp_user` [ RunTime:0.001887s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tp_user` WHERE ( `username` = 'uu' ) LIMIT 1   [ RunTime:0.000442s ]
+
+[ 2013-05-01T13:18:18+08:00 ] 127.0.0.1 /think_message/index.php/Register/checkname?username=zz
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000486s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000551s ]
+SQL: SHOW COLUMNS FROM `tp_user` [ RunTime:0.001974s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tp_user` WHERE ( `username` = 'zz' ) LIMIT 1   [ RunTime:0.000525s ]
+
+[ 2013-05-01T13:18:26+08:00 ] 127.0.0.1 /think_message/index.php/Register/checkname?username=zzlll
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000516s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000594s ]
+SQL: SHOW COLUMNS FROM `tp_user` [ RunTime:0.001943s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tp_user` WHERE ( `username` = 'zzlll' ) LIMIT 1   [ RunTime:0.000496s ]
+
+[ 2013-05-01T13:18:34+08:00 ] 127.0.0.1 /think_message/index.php/Register/checkname?username=
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000517s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000587s ]
+SQL: SHOW COLUMNS FROM `tp_user` [ RunTime:0.001863s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tp_user` WHERE ( `username` = '' ) LIMIT 1   [ RunTime:0.000436s ]
+
+[ 2013-05-01T13:22:57+08:00 ] 127.0.0.1 /think_message/index.php/Register/checkname?username=2
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000539s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000605s ]
+SQL: SHOW COLUMNS FROM `tp_user` [ RunTime:0.001826s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tp_user` WHERE ( `username` = '2' ) LIMIT 1   [ RunTime:0.000400s ]
+
+[ 2013-05-01T13:25:24+08:00 ] 127.0.0.1 /think_message/index.php/Register/checkname?username=ygyghj
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000481s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000545s ]
+SQL: SHOW COLUMNS FROM `tp_user` [ RunTime:0.002081s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tp_user` WHERE ( `username` = 'ygyghj' ) LIMIT 1   [ RunTime:0.000487s ]
+
